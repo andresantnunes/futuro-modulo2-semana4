@@ -4,9 +4,9 @@ public class Main {
         Produto produto= new Produto(5d, "sabão");
 
         cliente.adicionarCarrinho(produto);
-        System.out.println("Produto: "
+        System.out.println("Produto: \""
                 +produto.getNomeProduto()
-                +"; Saldo após a compra: "
+                +"\"; \nSaldo após a compra: "
                 +cliente.finalizarCompra());
     }
 }
