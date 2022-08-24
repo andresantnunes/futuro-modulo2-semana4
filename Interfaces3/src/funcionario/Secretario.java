@@ -1,12 +1,11 @@
 package funcionario;
 
-public class Faxineiro implements Funcionario{
-    private Double salario = 1500d;
+public class Secretario implements Funcionario{
+    private Double salario= 2000d;
 
     @Override
     public Double receberSalario(Integer horasTrabalhadas) {
-        horasTrabalhadas -= 8;
-        return this.salario + (horasTrabalhadas*salario*.1);
+        return salario * 1.2;
     }
 
     @Override
