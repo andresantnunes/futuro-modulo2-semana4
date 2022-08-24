@@ -1,3 +1,5 @@
+package parte1;
+
 public class Produto {
     private Double valor;
     private String nomeProduto;
