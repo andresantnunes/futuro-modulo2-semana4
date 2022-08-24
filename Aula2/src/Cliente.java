@@ -10,6 +10,14 @@ public class Cliente {
         carrinhoProdutos.add(produto);
     }
 
+    public void adicionarCarrinho(Produto produto, Integer numeroProdutos){
+        int i = 0;
+        while(i < numeroProdutos){
+            carrinhoProdutos.add(produto);
+            i++;
+        }
+    }
+
     public Double finalizarCompra(){
         for(Produto produto: carrinhoProdutos ){
             saldo = saldo - produto.getValor();
