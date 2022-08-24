@@ -18,4 +18,8 @@ public class Diretor implements Funcionario{
     public void envelhecer() {
 
     }
+
+    public Double getValorHora() {
+        return valorHora;
+    }
 }

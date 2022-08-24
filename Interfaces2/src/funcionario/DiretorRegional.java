@@ -6,4 +6,14 @@ public class DiretorRegional extends Diretor {
     // DiretorRegional vai ter a mesma resposta de Diretor
 
 
+    @Override
+    public Double receberSalario(Integer horasTrabalhadas) {
+//        return super.receberSalario(horasTrabalhadas);
+        // super é a classe cima, no caso o diretor
+        return horasTrabalhadas * super.getValorHora() * 1.2;
+    }
+
+    public void contratarFuncionario(){
+
+    }
 }
