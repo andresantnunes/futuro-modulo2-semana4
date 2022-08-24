@@ -3,10 +3,12 @@ package funcionario;
 public class Diretor implements Funcionario{
     private Double valorHora = 20.0;
 
+    private final Double VALORBASE = 4000.0; // constante em maiúsculo
+
     @Override
     public Double receberSalario(Integer horasTrabalhadas) {
 
-        return (valorHora*horasTrabalhadas)*1.1 ;
+        return (VALORBASE+(valorHora*horasTrabalhadas))*1.1 ;
     }
 
     @Override
@@ -21,5 +23,9 @@ public class Diretor implements Funcionario{
 
     public Double getValorHora() {
         return valorHora;
+    }
+
+    public Double getVALORBASE() {
+        return VALORBASE;
     }
 }

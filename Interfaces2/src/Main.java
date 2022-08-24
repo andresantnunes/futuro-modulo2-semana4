@@ -1,28 +1,20 @@
+import funcionario.*;
 import pessoa.Adulto;
 import pessoa.Empregado;
 import pessoa.Pessoa;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa pessoa = new Adulto("adulto",41);
-        pessoa.envelhecer();
-        pessoa.retornaCidade();
-        pessoa.retornaCidade("são paulo");
+        Funcionario funcionario = new Diretor();
+        System.out.println(funcionario.receberSalario(12));
+        funcionario = new Programador();
+        System.out.println(funcionario.receberSalario(12));
+        funcionario = new Faxineiro();
+        System.out.println(funcionario.receberSalario(12));
+        funcionario = new Secretario();
+        System.out.println(funcionario.receberSalario(12));
 
-        // pessoa não tem acesso aos getters e setter de pessoa.Adulto
-        // apenas utilizo os métodos como @Override
-
-        Adulto adulto = new Adulto("adulto2", 32);
-
-        adulto.getCidade();
-        adulto.envelhecer();
-        adulto.retornaCidade();
-
-        pessoa = new Empregado("empregado", 21, "são paulo", "Garoto de progrador(programador)");
-
-        pessoa.envelhecer();
-        pessoa.retornaCidade();
-        pessoa.retornaCidade("sp");
-
+        funcionario = new DiretorRegional();
+        System.out.println(funcionario.receberSalario(12));
     }
 }

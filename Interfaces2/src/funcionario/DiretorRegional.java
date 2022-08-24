@@ -10,7 +10,7 @@ public class DiretorRegional extends Diretor {
     public Double receberSalario(Integer horasTrabalhadas) {
 //        return super.receberSalario(horasTrabalhadas);
         // super é a classe cima, no caso o diretor
-        return horasTrabalhadas * super.getValorHora() * 1.2;
+        return (super.getVALORBASE()+ (horasTrabalhadas * super.getValorHora())) * 1.2;
     }
 
     public void contratarFuncionario(){
