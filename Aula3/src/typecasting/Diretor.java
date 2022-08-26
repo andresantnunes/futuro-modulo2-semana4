@@ -4,6 +4,7 @@ public class Diretor {
     private String nome;
     private Double salario;
 
+
     public String getNome() {
         return nome;
     }
