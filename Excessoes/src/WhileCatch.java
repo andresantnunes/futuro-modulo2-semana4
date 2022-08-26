@@ -10,6 +10,7 @@ public class WhileCatch {
             }
             catch (Exception e){
                 System.out.println("Falhou");
+                throw e;
             }
         }
     }
