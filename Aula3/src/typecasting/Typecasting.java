@@ -39,5 +39,15 @@ public class Typecasting {
 
         List<String> lista = new ArrayList<>();
         ArrayList<String> arrayList = (ArrayList<String>) lista;
+
+
+
+
+        // aula 4 - Principio de Liskov
+//        Diretor diretor2 = new Diretor();
+        DiretorRegional diretor2 = new DiretorRegional();
+        diretor2.setNome("Diretor 2");
+        diretor2.setSalario(100000d);
+        diretor2.setRegiao("SP");
     }
 }
